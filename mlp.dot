@@ -1,0 +1,20 @@
+digraph MLP {
+  rankdir=LR;
+  node [shape=circle];
+  L0N0 [label="Neuron"];
+  L-1N0W0 -> L0N0 [label="-0.92"];
+  L-1N0W1 -> L0N0 [label="-0.60"];
+  bias0 -> L0N0 [label="0.39"];
+  L0N1 [label="Neuron"];
+  L-1N1W0 -> L0N1 [label="-0.92"];
+  L-1N1W1 -> L0N1 [label="-0.60"];
+  bias1 -> L0N1 [label="0.39"];
+  L1N0 [label="Neuron"];
+  L0N0W0 -> L1N0 [label="-0.92"];
+  L0N0W1 -> L1N0 [label="-0.60"];
+  bias0 -> L1N0 [label="0.39"];
+  L1N1 [label="Neuron"];
+  L0N1W0 -> L1N1 [label="-0.92"];
+  L0N1W1 -> L1N1 [label="-0.60"];
+  bias1 -> L1N1 [label="0.39"];
+}
